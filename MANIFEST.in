@@ -1,0 +1,17 @@
+include LICENSE
+include README.md
+include frontend.sh
+include package.json
+
+recursive-include cfgov/jinja2 *.html
+recursive-include cfgov/unprocessed *.html *.css *.js *.png *.svg *.jpg *.gif *.eot *.ttf *.woff
+
+recursive-include config *
+recursive-include gulp *
+recursive-include scripts/npm/apps-install *
+recursive-include static.in *
+recursive-include test *
+
+recursive-exclude cfgov/unprocessed/apps/regulations3k/node_modules *
+recursive-exclude cfgov/unprocessed/apps/owning-a-home/node_modules *
+recursive-exclude cfgov/unprocessed/apps/analytics-gtm/node_modules *
